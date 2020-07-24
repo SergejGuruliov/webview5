@@ -1,6 +1,7 @@
 package com.example.app;
 
 import android.content.Intent;
+import android.content.res.AssetManager;
 import android.net.Uri;
 import android.webkit.WebResourceRequest;
 import android.webkit.WebResourceResponse;
@@ -11,17 +12,17 @@ import android.widget.Toast;
 import java.net.URL;
 import java.net.URLConnection;
 
+
 class MyWebViewClient extends WebViewClient {
 
     @Override
     public void onLoadResource(WebView view, String url){
-        if (url.indexOf("/skins/") > 1){
-            url.replace("https://mano.vz.lt/skins/", "file:///android_asset/skins/");
-            System.out.println(url);
-
-            view.stopLoading();
-            view.loadUrl(url);
-        }
+        System.out.println(url);
+//        if (url.startsWith("https://mano.vz.lt/skins/")){
+//
+//            view.stopLoading();
+//            view.loadUrl("file:///android_asset/skins/dashboard/images/icon/avatar-04.jpg");
+//        }
     }
 
 //    @Override
@@ -43,12 +44,23 @@ class MyWebViewClient extends WebViewClient {
 //        return super.shouldInterceptRequest(view, request);
 //    }
 //
-//    @Override
-//    public WebResourceResponse shouldInterceptRequest(WebView view, WebResourceRequest request) {
-//        System.out.println(request.getRequestHeaders());
-//
-//        return null;
-//    }
+    @Override
+    public WebResourceResponse shouldInterceptRequest(WebView view, WebResourceRequest request) {
+        Uri uri = request.getUrl();
+        if (uri.getPath().startsWith("/skins/")) {
+            try {
+                WebResourceResponse webResourceResponse = new WebResourceResponse(
+                        URLConnection.guessContentTypeFromName(uri.getPath()),
+                        "utf-8",
+                        view.getContext().getAssets().open(uri.getPath().substring(1)));
+                return webResourceResponse;
+            } catch (Exception e) {
+                System.out.println(e);
+            }
+
+        }
+        return super.shouldInterceptRequest(view, request);
+    }
 
 
 //    @Override

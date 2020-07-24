@@ -19,7 +19,11 @@ local.properties
 Thumbs.db
 
 # OSX files
-.DS_Store
+__MACOSX
+*.DS_Store
+*._.DS_Store
+._*
+app/src/main/assets
 
 # Android Studio
 *.iml
