@@ -23,10 +23,10 @@ public class MainActivity extends Activity {
         mWebView.setWebViewClient(new MyWebViewClient());
 
         // REMOTE RESOURCE
-//         mWebView.loadUrl("https://mano.vz.lt/registracija?frame=1&app=1");
+        mWebView.loadUrl("https://mano.vz.lt/admin");
 
         // LOCAL RESOURCE
-         mWebView.loadUrl("file:///android_asset/index.html");
+//         mWebView.loadUrl("file:///android_asset/index.html");
     }
 
     @Override
