@@ -1,11 +1,560 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="lt">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1">
+    <title>Mano „Verslo žinios“ naujienlaiškio užsakymas</title>
+    <meta name="description" content="Nemokamo&#x20;&#x201E;Verslo&#x20;&#x017E;ini&#x0173;&#x201C;&#x20;naujienlai&#x0161;kio&#x20;u&#x017E;sakymas&#x20;pagal&#x20;pasirinktus&#x20;verslo&#x20;sektorius&#x20;ir&#x20;bendroves,&#x20;atlyginim&#x0173;,&#x20;darbuotoj&#x0173;&#x20;skai&#x010D;iaus&#x20;poky&#x010D;ius&#x20;ir&#x20;kt"/>
+    <meta property="og&#x3A;title" content="Mano&#x20;&#x201E;Verslo&#x20;&#x017E;inios&#x201C;&#x20;naujienlai&#x0161;kio&#x20;u&#x017E;sakymas"/>
+    <meta property="og&#x3A;description" content="Nemokamo&#x20;&#x201E;Verslo&#x20;&#x017E;ini&#x0173;&#x201C;&#x20;naujienlai&#x0161;kio&#x20;u&#x017E;sakymas&#x20;pagal&#x20;pasirinktus&#x20;verslo&#x20;sektorius&#x20;ir&#x20;bendroves,&#x20;atlyginim&#x0173;,&#x20;darbuotoj&#x0173;&#x20;skai&#x010D;iaus&#x20;poky&#x010D;ius&#x20;ir&#x20;kt"/>
+    <meta property="og:image" content="skins/profile/img/zinau-ka-noriu-zinoti-1200x630.png">
+    <meta property="og:image:width" content="1200"/>
+    <meta property="og:image:height" content="630"/>
+    <meta property="og:url" content="https://mano.vz.lt/">
+    <link rel="shortcut icon" href="https://www.vz.lt/favicon.ico">
+    <base href="file:///android_asset/">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/css/bootstrap.min.css">
+    <!-- if -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/select2/4.0.6-rc.0/css/select2.min.css" rel="stylesheet"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <!-- /if -->
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:400,500,600,700%7COpen+Sans:400,500,600,700%7CPoppins:300,400,500,600,700%7CRoboto&amp;subset=latin-ext" rel="stylesheet">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css" integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp" crossorigin="anonymous">
+    <link rel="stylesheet" href="skins/profile/css/style.min.css">
+    <link rel="stylesheet" href="skins/profile/css/profile.min.css">
+    <link rel="stylesheet" href="skins/profile/css/register.min.css">
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-validate/1.19.0/jquery.validate.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/jquery.validation/1.13.1/additional-methods.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/select2/4.0.6-rc.0/js/select2.min.js"></script>
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/croppie/2.6.4/croppie.min.css">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css">
+
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.1/css/all.css" integrity="sha384-gfdkjb5BdAXd+lj+gudLWI+BXq4IuLW5IT+brZEZsLFm++aCMlF1V92rMkPaX4PP" crossorigin="anonymous">
+
 </head>
-<body style="font-family: monospace">
-    REPLACE THIS FILE WITH YOUR OWN INDEX.HTML
+<body>
+
+<script>
+    (function(i, s, o, g, r, a, m) {
+        i['GoogleAnalyticsObject'] = r;
+        i[r] = i[r] || function() {
+            (i[r].q = i[r].q || []).push(arguments)
+        }, i[r].l = 1 * new Date();
+        a = s.createElement(o),
+        m = s.getElementsByTagName(o)[0];
+        a.async = 1;
+        a.src = g;
+        m.parentNode.insertBefore(a, m)
+    })(window, document, 'script', '//www.google-analytics.com/analytics.js', 'ga');
+    ga('create', 'UA-724652-3', 'vz.lt', {
+        'alwaysSendReferrer': true
+    });
+    ga('require', 'ecommerce');
+    ga('require', 'ec');
+    ga('require', 'displayfeatures');
+    ga('send', 'pageview');
+
+
+    var App = true;
+    </script>
+
+<section id="registration-form" class="">
+
+    <div class="inner-wr">
+        <div class="form-holder">
+
+            <div class="user-info">
+                <p style="margin:0">Tik registruotiems skaitytojams:</p>
+                <ul style="margin-top:10px">
+                    <li>Naujienos pagal dominančias sritis</li>
+                    <li>Informacija apie pokyčius pasirinktose įmonėse</li>
+                    <li>Galimybė komentuoti straipsnius</li>
+                </ul>
+            </div>
+            <div class="social-separator">
+                <p>Kurti paskyrą su</p>
+            </div>
+
+            <div class="col-xs-12 soc-log register-social" id="social">
+                <div class="row">
+
+                    <div>
+                        <a id="FBLogin" href="#" class="active-social">
+                            <img class="svg-image" src="skins/profile/img/FB.svg" alt="svg">
+                            <p>
+                                <strong>Facebook</strong>
+                            </p>
+                        </a>
+                    </div>
+
+                    <div>
+                        <a target="_blank" id="INLogin" href="https://www.linkedin.com/oauth/v2/authorization?response_type=code&client_id=86idgue3zcotzo&scope=r_liteprofile,r_emailaddress&redirect_uri=https://mano.vz.lt/registracija&state=29b30a603dd792bae4af5990f9a08e2d" class="active-social">
+                            <img class="svg-image" src="skins/profile/img/IN.svg" alt="svg">
+                            <p>
+                                <strong>Linkedin</strong>
+                            </p>
+                        </a>
+                    </div>
+
+                    <div>
+                        <a id="GPLogin" class="active-social" href="#">
+                            <img class="svg-image" src="skins/profile/img/G+.svg" alt="svg">
+                            <p>
+                                <strong>Google</strong>
+                            </p>
+                        </a>
+                    </div>
+
+                    <div>
+                        <a id="APLogin" class="active-social" href="#">
+                            <div id="appleid-signin" data-color="white" data-border="true" data-type="sign in"></div>
+                            <img class="svg-image" src="skins/profile/img/apple.svg" alt="svg">
+                            <p>
+                                <strong>Apple</strong>
+                            </p>
+                        </a>
+                    </div>
+
+                </div>
+                <span class="social-error"></span>
+
+            </div>
+
+            <div class="separator">
+                <span>arba</span>
+            </div>
+
+            <div class="social d-none">
+                <img class="profileIMG" alt="socialIMG" src="#">
+                <div>
+                    <h5>Sveiki,</h5>
+                    <p>
+                        Registruojatės su
+                        <span id="soc-name">„Facebook“</span>
+                    </p>
+                    <!-- <h6>Pabaikite pildyti žemiau esančius laukelius.</h6> -->
+                </div>
+                <img class="svg-image social-logo" alt="svg" src="#">
+            </div>
+
+            <form id="reg" class="dis" action="#" method="post" autocomplete="off">
+
+                <div class="row">
+                    <div class="inputs-wr clearfix email-input">
+                        <div class="input-wr col-xs-12 col-sm-6">
+                            <div class="label-wrap">
+                                <label class="input-label" for="email">E. paštas</label>
+                                <input id="email" type="text" name="Email" autocomplete="off"/>
+                            </div>
+                            <div class="message-email"></div>
+                        </div>
+                        <div class="input-wr col-xs-12 col-sm-6">
+                            <div class="label-wrap">
+                                <label class="input-label" for="NickName">Komentarų slapyvardis</label>
+                                <input id="NickName" type="text" name="NickName" autocomplete="off"/>
+                                <span class="disclaimer">*matomas tik komentaruose</span>
+                            </div>
+                            <div class="message-nickname"></div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="row">
+                    <div class="inputs-wr clearfix password-input">
+                        <div class="input-wr col-xs-12 col-sm-6">
+                            <div class="label-wrap">
+                                <label class="input-label" for="password">Slaptažodis</label>
+                                <input id="password" type="password" name="Password" autocomplete="new-password"/>
+                            </div>
+                            <div class="message-password"></div>
+                        </div>
+                        <div class="input-wr col-xs-12 col-sm-6">
+                            <div class="label-wrap">
+                                <label class="input-label" for="password_rep" id="password_rep_label">Pakartokite slaptažodį</label>
+                                <input id="password_rep" type="password" name="password_rep"/>
+                            </div>
+                            <div class="message-password-rep"></div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="form-temp">
+
+                    <hr style="display:none !important"/>
+
+                    <div class="personal-info">
+                        <div class="inputs-wr" style="display:none !important">
+                            <div class="row clearfix">
+                                <div class="col-xs-12" id="interesting-companies">
+                                    <label for="company_sector_leaders" class="smaller">
+                                        Mane domina šios bendrovės:
+                                        <span class="question-mark tool" data-tip="Čia bet kada galite papildyti ar sumažinti sąrašą. Informuosime apie svarbius pokyčius (pvz., atlyginimų, darbuotojų skaičiaus, pajamų ir kt.) jūsų nurodytose bendrovėse">
+                                                <img class="svg-image" src="skins/profile/img/question-mark.svg" alt="icon"/>
+                                            </span>
+                                    </label>
+                                    <select id="company_sector_leaders" multiple name="companyID[]">
+                                        <option value="">&nbsp;</option>
+                                    </select>
+                                    <div class="message-companies"></div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <hr style="display:none !important"/>
+
+                        <div class="row interested-area wrap" style="display:none !important">
+                            <div class="inputs-wr clearfix">
+                                <div class="col-xs-12">
+                                    <h6>Mane domina šios sritys:</h6>
+                                </div>
+
+                                <div class="col col-xs-12 col-sm-6">
+                                    <div class="input-holder ">
+                                        <input id="FA" type="checkbox" name="area[]" value="1057" data-name="Verslo aplinka">
+                                        <label for="FA" class="ckl tool" data-tip="Politika; Ekonomika; Teisė; Viešieji pirkimai." tabindex="1">Verslo aplinka</label>
+                                    </div>
+
+                                    <div class="input-holder">
+                                        <input id="PE" type="checkbox" name="area[]" value="1020" data-name="Pramonė">
+                                        <label for="PE" class="ckl tool" data-tip="Agroverslas; Energetika." tabindex="1">Pramonė</label>
+                                    </div>
+
+                                    <div class="input-holder">
+                                        <input id="MA" type="checkbox" name="area[]" value="1014" data-name="Rinkos">
+                                        <label for="MA" class="ckl tool" data-tip="Akcijos; Valiutos; Žaliavos; Bankai; Asmeniniai finansai." tabindex="1">Rinkos</label>
+                                    </div>
+
+                                    <div class="input-holder">
+                                        <input id="PR" type="checkbox" name="area[]" value="1021" data-name="Prekyba">
+                                        <label for="PR" class="ckl tool" data-tip="Rinkodara; Reklama; Pardavimai; Eksportas." tabindex="1">Prekyba</label>
+                                    </div>
+
+                                    <div class="input-holder">
+                                        <input id="WE" type="checkbox" name="area[]" value="1027" data-name="Finansai">
+                                        <label for="WE" class="ckl tool" data-tip="Mokesčiai; Draudimas; Buhalterinė apskaita." tabindex="1">Finansai</label>
+                                    </div>
+
+                                    <div class="input-holder">
+                                        <input id="NT" type="checkbox" name="area[]" value="1022" data-name="Statyba">
+                                        <label for="NT" class="ckl tool" data-tip="NT; Statybinių medžiagų pramonė." tabindex="1">Statyba ir NT</label>
+                                    </div>
+
+                                    <div class="input-holder">
+                                        <input id="PD" type="checkbox" name="area[]" value="1710" data-name="Pardavimai">
+                                        <label for="PD" class="ckl">Pardavimai</label>
+                                    </div>
+                                </div>
+
+                                <div class="col col-xs-12 col-sm-6">
+                                    <div class="input-holder">
+                                        <input id="SE" type="checkbox" name="area[]" value="1024" data-name="Paslaugos">
+                                        <label for="SE" class="ckl tool" data-tip="HORECA; Inovacijos; Konsultavimas; Informavimas; Švietimas; Sveikatinimas; kt." tabindex="1">Paslaugos</label>
+                                    </div>
+
+                                    <div class="input-holder">
+                                        <input id="BV" type="checkbox" name="area[]" value="1026" data-name="Vadyba">
+                                        <label for="BV" class="ckl tool" data-tip="Įmonių valdymas; Personalas; Lyderystė." data-placement="right" tabindex="1">Vadyba</label>
+                                    </div>
+
+                                    <div class="input-holder">
+                                        <input id="TL" type="checkbox" name="area[]" value="1016" data-name="Logistika">
+                                        <label for="TL" class="ckl tool" data-tip="Tiekimo grandinė; Sandėliavimas; Transportas." data-placement="right" tabindex="1">Logistika ir transportas</label>
+                                    </div>
+
+                                    <div class="input-holder">
+                                        <input id="WE" type="checkbox" name="area[]" value="1033" data-name="Laisvalaikis">
+                                        <label for="WE" class="ckl tool" data-tip="Kultūra; Technologijos; Automobiliai; Hobiai; Sportas." tabindex="1">Laisvalaikis</label>
+                                    </div>
+
+                                    <div class="input-holder">
+                                        <input id="GZ" type="checkbox" name="area[]" value="1032" data-name="Gazelė">
+                                        <label for="GZ" class="ckl tool" data-tip="Smulkus verslas; Startuoliai." tabindex="1">Gazelė</label>
+                                    </div>
+
+                                    <div class="input-holder">
+                                        <input id="MR" type="checkbox" name="area[]" value="1028" data-name="Rinkodara">
+                                        <label for="MR" class="ckl">Rinkodara</label>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="checkbox-error"></div>
+                        </div>
+
+                        <hr style="display:none !important"/>
+
+                        <div class="inputs-wr" style="display:none !important">
+                            <div class="row clearfix">
+                                <div class="col-xs-12 col-sm-6" id="company-select">
+                                    <label for="company" class="smaller">Mano įmonė</label>
+                                    <select id="company" data-placeholder="Ieškokite" name="ProfileCompanyCode">
+                                        <option value="">&nbsp;</option>
+                                    </select>
+                                    <div class="message-company"></div>
+                                </div>
+
+                                <div class="col-xs-12 col-sm-6" id="department-select">
+                                    <label for="department" class="smaller">Mano darbo sritis</label>
+                                    <select id="department">
+                                        <option value="">&nbsp;</option>
+                                    </select>
+                                    <div class="message-department"></div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <hr style="display:none !important" class="hybrid-hr"/>
+
+                        <div class="inputs-wr" style="display:none !important">
+                            <div class="row clearfix">
+                                <div class="col-xs-12 col-md-6" id="sub-frequency">
+                                    <label for="subscription-frequency" class="smaller">Naujienlaiškį noriu gauti:</label>
+                                    <select id="subscription-frequency" name="frequency">
+                                        <option value="">&nbsp;</option>
+                                    </select>
+                                    <div class="message-frequency"></div>
+                                </div>
+
+                                <div class="col-xs-12 col-md-6" id="sub-time">
+                                    <label for="subscription-time" class="smaller">Šiuo laiku:</label>
+                                    <select id="subscription-time" name="time"></select>
+                                    <div class="message-time"></div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="row">
+                            <div class="inputs-wr clearfix">
+                                <div class="col-xs-12 col-sm-12">
+                                    <div class="check-container">
+                                        <input id="TT" type="checkbox" name="private" value="1">
+                                        <label for="TT" class="ckl">
+                                            Su privatumo
+                                            <a target="_blank" href="https://www.vz.lt/privatumo-politika">politika ir taisyklėmis</a>
+                                            susipažinau
+                                        </label>
+                                    </div>
+                                    <div class="message-private"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="finish-form">
+
+                        <input type="hidden" name="socialID">
+                        <input type="hidden" name="persona">
+                        <input type="hidden" name="picture">
+                        <input type="hidden" name="social">
+                        <input type="hidden" name="socialAccessToken">
+                        <input type="hidden" name="ref" value="">
+
+                        <input type="hidden" name="type" value="register">
+                        <button type="submit" name="error" class="create ">Sukurti</button>
+                        <a href="login://">Prisijungti</a>
+                        <a class="btn reg" href="https://parduotuve.vz.lt/vz-prenumerata/prenumerata.3.php" style="margin-top:15px !important;">Prenumeruoti</a>
+                    </div>
+                </div>
+            </form>
+        </div>
+    </div>
+</section>
+
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/js/bootstrap.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/iCheck/1.0.2/icheck.min.js"></script>
+
+<script>
+    var department = [{
+        "id": "1010",
+        "text": "Administravimas"
+    }, {
+        "id": "1200",
+        "text": "Apsauga, gelb\u0117jimo paslaugos"
+    }, {
+        "id": "1270",
+        "text": "Dizainas, architekt\u016bra"
+    }, {
+        "id": "1210",
+        "text": "Draudimas"
+    }, {
+        "id": "1160",
+        "text": "Energetika, elektronika"
+    }, {
+        "id": "1020",
+        "text": "Finansai, apskaita, auditas"
+    }, {
+        "id": "1030",
+        "text": "Gamyba, pramon\u0117"
+    }, {
+        "id": "1220",
+        "text": "In\u017einerija, mechanika"
+    }, {
+        "id": "1040",
+        "text": "IT, telekomunikacijos"
+    }, {
+        "id": "1060",
+        "text": "Klient\u0173 aptarnavimas, paslaugos"
+    }, {
+        "id": "1227",
+        "text": "Kokyb\u0117s, rizik\u0173 valdymas"
+    }, {
+        "id": "1180",
+        "text": "Kult\u016bra, pramogos, sportas"
+    }, {
+        "id": "1230",
+        "text": "Logistika, transporto vadyba"
+    }, {
+        "id": "1260",
+        "text": "Maisto gamyba"
+    }, {
+        "id": "1170",
+        "text": "Medicina, farmacija, veterinarija"
+    }, {
+        "id": "1280",
+        "text": "Nekilnojamas turtas"
+    }, {
+        "id": "1290",
+        "text": "Pardavimas-konsultavimas"
+    }, {
+        "id": "1070",
+        "text": "Pardavim\u0173, eksporto vadyba"
+    }, {
+        "id": "1080",
+        "text": "Personalo vadyba"
+    }, {
+        "id": "1090",
+        "text": "Pirkim\u0173, tiekimo vadyba"
+    }, {
+        "id": "1100",
+        "text": "Rinkodara, reklama"
+    }, {
+        "id": "1120",
+        "text": "Sand\u0117liavimas"
+    }, {
+        "id": "1238",
+        "text": "Socialin\u0117 veikla"
+    }, {
+        "id": "1240",
+        "text": "Statyba"
+    }, {
+        "id": "1150",
+        "text": "\u0160vietimas, mokslas, mokymai"
+    }, {
+        "id": "1050",
+        "text": "Teis\u0117"
+    }, {
+        "id": "1310",
+        "text": "Transporto vairavimas"
+    }, {
+        "id": "1130",
+        "text": "Vadovavimas, verslo vystymas"
+    }, {
+        "id": "1140",
+        "text": "Valstyb\u0117s tarnyba"
+    }, {
+        "id": "1190",
+        "text": "\u017dem\u0117s \u016bkis, aplinkos in\u017einerija"
+    }, {
+        "id": "1300",
+        "text": "\u017diniasklaida, komunikacija"
+    }, {
+        "id": 1,
+        "text": "Investavimas"
+    }];
+    var linkedin = {
+        "hash": "29b30a603dd792bae4af5990f9a08e2d",
+        "id": false
+    };
+    </script>
+
+<script src="skins/profile/js/minified/register.min.js?v4"></script>
+
+<script>
+    $(function() {
+        $('.finish-form').addClass('modal-only');
+
+        $('form').on('click', '#changeToLogin, #changeToLoginValid', function(e) {
+            e.preventDefault();
+            window.parent.postMessage(["changeModal", "login"], "*");
+        });
+
+        $('#social').css('margin-top', '20px');
+        $('.social-separator').css('margin-top', '10px');
+        $('#reg hr').hide();
+        $('#reg .personal-info').css('margin-top', '10px');
+
+    });
+    </script>
+
+<script>
+    window.onload = function() {
+        if (window.self !== window.top) {
+            if ($('#registration-form').length !== 0) {
+                var height = $('#registration-form .inner-wr').outerHeight();
+                window.parent.postMessage(["setHeight", height + 50], "*");
+            } else {
+
+                if (height == undefined) {
+                    var height = $('#login-form .inner-wr').outerHeight();
+                    window.parent.postMessage(["setHeight", height], "*");
+                    $('.remember-form .inner-wr > div').css('border', 'none');
+                } else {
+                    var height = $('.remember-form .inner-wr').outerHeight();
+                    window.parent.postMessage(["setHeight", height], "*");
+                    $('.remember-form .inner-wr > div').css('border', 'none');
+                }
+            }
+        }
+    }
+
+    $(function() {
+
+        if (window.self !== window.top) {
+            $('header').remove();
+            $('footer').remove();
+            $('#LoginModal').remove();
+
+            $(window).resize(function() {
+                if ($('#registration-form').length !== 0) {
+                    var height = $('#registration-form .inner-wr').outerHeight();
+                    window.parent.postMessage(["setHeight", height + 50], "*");
+                } else {
+                    var height = $('.remember-form .inner-wr').outerHeight();
+                    window.parent.postMessage(["setHeight", height], "*");
+                    $('.remember-form .inner-wr > div').css('border', 'none');
+                }
+            });
+
+            $('#registration-form #ELogin').on('click', function() {
+                $('#reg').removeClass('dis');
+                var height = $('#registration-form .inner-wr').outerHeight();
+                window.parent.postMessage(["setHeight", height + 50], "*");
+            });
+
+            $('#registration-form .finish-form button.create').on('click', function() {
+                $('#reg').removeClass('dis');
+
+                var height = $('#registration-form .inner-wr').outerHeight();
+                window.parent.postMessage(["setHeight", height + 150], "*");
+            });
+
+        } else {
+            $('#registration-form .finish-form button.create').on('click', function() {
+                $('#reg').removeClass('dis');
+            });
+
+            $('#registration-form #ELogin').on('click', function() {
+                $('#reg').removeClass('dis');
+            });
+        }
+    });
+    </script>
 </body>
 </html>
+

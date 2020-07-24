@@ -18,13 +18,15 @@ public class MainActivity extends Activity {
         mWebView = findViewById(R.id.activity_main_webview);
         WebSettings webSettings = mWebView.getSettings();
         webSettings.setJavaScriptEnabled(true);
+        webSettings.setUserAgentString(webSettings.getUserAgentString().replace("; wv",""));
+
         mWebView.setWebViewClient(new MyWebViewClient());
 
         // REMOTE RESOURCE
-         mWebView.loadUrl("https://mano.vz.lt");
+//         mWebView.loadUrl("https://mano.vz.lt/registracija?frame=1&app=1");
 
         // LOCAL RESOURCE
-//         mWebView.loadUrl("file:///android_asset/index.html");
+         mWebView.loadUrl("file:///android_asset/index.html");
     }
 
     @Override
